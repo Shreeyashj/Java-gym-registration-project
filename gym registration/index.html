@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Title-->
+    <title>CRUD-JS</title>
+     <!-- CSS File-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="./css/Screenshot 2023-10-20 001631.png" style="height: 350px; padding-left: 22%;">
+    <img src="./css/Screenshot 2023-10-20 001824.png" style="height: 350px; align-self: start;">
+    <img src="./css/Screenshot 2023-10-20 001948.png" style="height: 350px; align-self: first baseline;">
+    <img src="./css/Screenshot 2023-10-19 235127.png" style="height: 350px; align-self: flex-end;">
+	<CENTRE><h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">GyM Registration</h2></CENTER>
+    <!--Table-->
+    <table>
+        <!--Row-1-->
+        <tr>
+            <!--Column-1-->
+            <td>
+                <!--Form-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                	<h3>GyM Form</h3>
+                  <!--div-1-->
+                    <div>
+                        <label>Full Name</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="userNamevalidationError">This field is required</label>
+                        <!--Input User Name-->
+                        <input type="text" name="userName" id="userName" placeholder="Enter the user Name">
+                    </div>
+                    <!--div-2-->
+                    <div>
+                        <label>Contact number</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="rollNovalidationError" >This field is required</label>
+                        <!--Input Roll No-->
+                        <input type="text" name="rollNo" id="rollNo" placeholder="Enter the Contact number">
+                    </div>
+                    <!--div-3-->
+                    <div>
+                        <label>GyM Duration</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="stdClassvalidationError">This field is required</label>
+                       <!--Input Student Class-->
+                        <input type="text" name="stdClass" id="stdClass" placeholder="Enter the Gym Duration">
+                    </div>
+                    <!--div-4-->
+                    <div>
+                        <label>BMI
+                        </label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="tsubvalidationError">This field is required</label>
+                        <!--Input Total Subject-->
+                        <input type="number" name="tsub" id="tsub" placeholder="Enter the body to weight Ratio">
+                    </div>
+                    <!--div-5-->
+                    <div>
+                        <label>Age</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="agevalidationError">This field is required</label>
+                        <!--Input Age-->
+                        <input type="number" name="age" id="age" placeholder="Enter the Age">
+                    </div>
+                    <!--div-6-->
+                    <div class="form-action-buttons">
+                        <!--Input Button-->
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <!--Column-2-->
+            <td>
+                <!--Nested Table-->
+                <table class="list" id="stdlist" style="background-color: #C2976D;">
+                    <!--Table Head-->
+                    <thead>
+                        <!--Row-2-->
+                        <tr>
+                            <th>Full Name</th>
+                            <th> Contact Number</th>
+                            <th>GyM Duration</th>
+                            <th>BMI</th>
+                            <th>Age</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!--Table Body-->
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- JS File-->
+    <script src="JS/script.js"></script>
+</body>
+</html>
